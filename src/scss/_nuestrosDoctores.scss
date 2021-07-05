@@ -1,0 +1,35 @@
+@import "headerPages";
+
+.container__doctores {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0 auto;
+
+  .doctores {
+    padding-left: 80px;
+
+    .doctores__image {
+      box-shadow: -14px 14px 4px rgba(0, 0, 0, 0.1);
+    }
+    .doctor__name {
+      color: $color-azul-marino;
+      font-family: $ubuntu-medium;
+      font-size: 27px;
+      text-align: center;
+    }
+    .doctor__grado {
+      color: $color-gris;
+      font-size: 18px;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    .doctor__especialidad {
+      color: $color-gris;
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+}

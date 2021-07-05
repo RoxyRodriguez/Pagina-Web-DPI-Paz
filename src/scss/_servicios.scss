@@ -1,0 +1,67 @@
+.container__services {
+  width: 100%;
+  height: 440px;
+  margin: 0 auto 0 auto;
+  background-image: url(../img/background_services.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  .services {
+    text-align: center;
+    
+    .services__title {
+      padding-top: 15px;
+      color: $color-azul-marino;
+      font-size: 45px;
+      font-family: $ubuntu-regular;
+      span {
+        color: $color-verde;
+        font-size: 53px;
+      }
+    }
+    .services__description {
+      color: $color-gris;
+      font-size: 22px;
+      padding-top: 15px;
+    }
+  }
+  .cards__services {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 0 auto;
+    padding-top: 40px;
+    .card__service {
+      width: 370px;
+      height: 220px;
+      background-color: rgba(46, 35, 107, 0.9);
+      position: relative;
+      overflow: hidden;
+      box-shadow: -14px 14px 4px rgba(0, 0, 0, 0.1);
+    }
+    ::before {
+      content: "";
+      background-image: url(../img/background-cards.svg);
+      background-repeat: no-repeat;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      right: 0;
+      top: 0;
+      z-index: 1;
+    }
+    
+    .card__title {
+      text-align: center;
+      padding-top: 55px;
+      a {
+        color: $color-blanco;
+        text-transform: uppercase;
+        font-family: $ubuntu-regular;
+        font-size: 35px;
+       
+      }
+    }
+  }
+}

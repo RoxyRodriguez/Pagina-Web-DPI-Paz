@@ -1,0 +1,49 @@
+@import "headerPages";
+
+.container__serviciosMedicos {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .serviciosMedicos_photo {
+    box-shadow: -14px 14px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .serviciosMedicos {
+    width: 45%;
+    .servicio {
+      height: 150px;
+      margin-bottom: 10px;
+      border: 1px solid $color-azul-marino;
+      border-top-right-radius: 90px;
+      border-bottom-right-radius: 90px;
+      border-left: none;
+      padding: 20px;
+
+      &:hover {
+        background-color: red;
+        color: $color-blanco;
+      }
+
+      //   .title__services {
+      //     color: $color-azul-marino;
+      //     font-family: $ubuntu-regular;
+      //     font-size: 28px;
+      //     margin-bottom: 10px;&:hover {
+      //     background-color:$color-azul-marino;
+      //     color: $color-blanco;
+      //   }
+      //   }
+
+      i {
+        color: $color-verde;
+      }
+
+      .service__description {
+        color: $color-gris;
+        font-size: 17px;
+      }
+    }
+  }
+}

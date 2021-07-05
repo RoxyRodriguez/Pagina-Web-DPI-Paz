@@ -1,0 +1,108 @@
+@import "headerPages";
+
+.title__head {
+  .title__especialidad {
+    padding: 30px;
+    font-size: 16px;
+    color: $color-gris;
+  }
+}
+.container_especialidad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  .especialidad__accordion {
+    input {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+    }
+    /* Accordion styles */
+    .tabs {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+    }
+    .tab {
+      width: 100%;
+      color: white;
+      overflow: hidden;
+      &-label {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        background: $color-azul-marino;
+        font-weight: bold;
+        cursor: pointer;
+        /* Icon */
+        &:hover {
+          background: darken($color-azul-marino, 10%);
+        }
+        &::after {
+          content: "\276F";
+          width: 1em;
+          height: 1em;
+          text-align: center;
+          transition: all 0.35s;
+        }
+      }
+      &-content {
+        max-height: 0;
+        padding: 0 1em;
+        color: $color-azul-marino;
+        background: white;
+        transition: all 0.35s;
+      }
+      &-close {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1em;
+        font-size: 0.75em;
+        background: $color-azul-marino;
+        cursor: pointer;
+        &:hover {
+          background: darken($color-azul-marino, 10%);
+        }
+      }
+    }
+
+    // :checked
+    input:checked {
+      + .tab-label {
+        background: darken($color-azul-marino, 10%);
+        &::after {
+          transform: rotate(90deg);
+        }
+      }
+      ~ .tab-content {
+        max-height: 100vh;
+        padding: 1em;
+      }
+    }
+  }
+  .especialidad__information {
+    padding-left: 40px;
+    .subtitle {
+      color: $color-azul-marino;
+      font-size: 18px;
+      font-family: $ubuntu-regular;
+      margin-bottom: 20px;
+    }
+    .description {
+      color: $color-gris;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    .description__tiempo {
+      color: $color-gris;
+      font-size: 16px;
+      padding-left: 60px;
+     
+      i {
+        color: $color-verde;
+        margin-right: 10px;
+      }
+    }
+  }
+}

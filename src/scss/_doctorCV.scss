@@ -1,0 +1,64 @@
+@import "headerPages";
+
+.container__file {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .file__photo {
+    padding-right: 130px;
+  }
+  .file__wrapper {
+    .file {
+      .file__title {
+        color: $color-azul-marino;
+        font-size: 27px;
+        font-family: $ubuntu-regular;
+        margin-bottom: 25px;
+        border-bottom: 1px solid $color-azul-marino;
+        padding-bottom: 20px;
+        width: fit-content;
+      }
+      .file__details {
+        .detail {
+          margin-bottom: 15px;
+          font-size: 18px;
+          color: $color-gris;
+        }
+      }
+    }
+  }
+}
+.container__certificados {
+  margin-top: 30px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+
+  .certificados {
+    display: flex;
+    flex-direction: column;
+
+    .title__certificados {
+      color: $color-azul-marino;
+      font-size: 27px;
+      font-family: $ubuntu-regular;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+      border-bottom: 1px solid $color-azul-marino;
+      padding-bottom: 20px;
+      width: fit-content;
+    }
+    .list__certificados {
+      .item__certificados {
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: $color-gris;
+        i {
+          color: $color-azul-marino;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}

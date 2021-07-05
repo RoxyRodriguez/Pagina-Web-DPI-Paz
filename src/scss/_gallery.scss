@@ -1,0 +1,28 @@
+.container__gallery {
+  margin-top: 20px;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(46, 35, 107, 0.4);
+  ::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/fondo-galeria.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  .gallery__title{
+    color: $color-blanco;
+    font-family: $ubuntu-regular;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 60px;
+  }
+}

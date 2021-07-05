@@ -1,0 +1,105 @@
+@import "headerPages";
+
+.container__about {
+  display: flex;
+  margin: 20px;
+  width: 70%;
+  margin: 0 auto 0 auto;
+  margin-top: 60px;
+  .about__image {
+    box-shadow: -14px 14px 4px rgba(0, 0, 0, 0.1);
+  }
+  .about__description {
+    padding-left: 90px;
+    .about__title {
+      color: $color-azul-marino;
+      font-size: 45px;
+      padding-top: 20px;
+      padding-bottom: 15px;
+      font-family: $ubuntu-regular;
+      span {
+        color: $color-verde;
+        font-size: 53px;
+      }
+    }
+    .about__words {
+      color: $color-gris;
+      text-align: justify;
+      font-size: 20px;
+      padding-bottom: 30px;
+      line-height: 30px;
+    }
+    .about__name {
+      color: $color-gris;
+      font-size: 25px;
+      text-align: right;
+    }
+  }
+}
+.container__mision {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto 0 auto;
+  padding-top: 50px;
+
+  .card {
+    background-color: #fff;
+    background-image: url(../img/background-cards.svg);
+    background-repeat: no-repeat;
+    border: 1px solid $color-verde;
+    color: $color-azul-marino;
+    width: 370px;
+    height: 220px;
+
+    .card__title {
+      text-transform: uppercase;
+      font-family: $ubuntu-regular;
+      font-size: 27px;
+      padding-top: 30px;
+      text-align: center;
+    }
+    .card__info {
+      font-size: 15px;
+      line-height: 28px;
+      padding-top: 10px;
+      padding-left: 50px;
+      padding-bottom: 30px;
+      max-width: 310px;
+      text-align: justify;
+    }
+  }
+}
+.container__phrase {
+  
+  max-width: $max-width;
+ 
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(46, 35, 107, 0.4);
+  margin-top: 30px;
+  ::before {
+    content: "";
+    background-image: url(../img/img-phrase.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+  .phrase{
+    text-align: center;
+    .phrase__title{
+      color: $color-blanco;
+      padding-bottom: 30px;
+      padding-top: 100px;
+      font-style: italic;
+    }
+    
+  }
+}

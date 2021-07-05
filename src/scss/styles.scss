@@ -1,0 +1,21 @@
+@import "header";
+@import "cards";
+@import "welcome";
+@import "separador";
+@import "servicios";
+@import "why";
+@import "gallery";
+@import "photos";
+@import "footer";
+@import "conocenos";
+@import "nuestrosDoctores";
+@import "doctorCV" ;
+@import "serviciosMedicos";
+@import "ecografia";
+
+
+
+body {
+  background-color: #fcfcfc;
+  font-family: $ubuntu-light;
+}

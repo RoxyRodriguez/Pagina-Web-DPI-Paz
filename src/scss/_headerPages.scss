@@ -1,0 +1,59 @@
+.header__pages {
+    max-width: $max-width;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.2);
+    ::before {
+      content: "";
+      background-image: url(../img/background-pages.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      top: 0;
+      right: 0;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+    }
+    .header__navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 30px;
+      padding-left: 30px;
+  
+      .header__links {
+        display: flex;
+        align-items: center;
+        .header__link {
+          padding-right: 30px;
+          a {
+            color: $color-azul-marino;
+            font-family: $ubuntu-regular;
+            font-size: 1rem;
+            text-transform: capitalize;
+            &:hover {
+              color: $color-blanco;
+            }
+          }
+        }
+      }
+      .header__action {
+        margin-right: 20px;
+      }
+    }
+  
+    .header__contenido {
+      padding-top: 110px;
+      padding-left: 60px;
+      .title__pages {
+        text-transform: capitalize;
+        color: $color-azul-marino;
+        font-size: 60px;
+        font-family: $ubuntu-medium;
+        margin-bottom: 1.3rem;
+      }
+    }
+  }

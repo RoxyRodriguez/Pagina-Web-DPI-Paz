@@ -1,0 +1,37 @@
+.container__why {
+  display: flex;
+  width: 70%;
+  margin: 0 auto 0 auto;
+  padding-top: 30px;
+  .why__image {
+    box-shadow: -14px 14px 4px rgba(0, 0, 0, 0.1);
+  }
+  .why__reasons {
+    padding-left: 90px;
+    padding-top: 20px;
+    .why__title {
+      color: $color-azul-marino;
+      font-size: 45px;
+      font-family: $ubuntu-regular;
+      span {
+        color: $color-verde;
+        font-size: 53px;
+      }
+    }
+    .why__list {
+        padding-top: 20px;
+      .why__item {
+        color: $color-azul-marino;
+        font-size: 26px;
+        font-family: $ubuntu-bold;
+        padding-top: 30px;
+      }
+      .why__description{
+          color: $color-gris;
+          font-size: 18px;
+          padding-left: 60px;
+          padding-top: 10px;
+      }
+    }
+  }
+}

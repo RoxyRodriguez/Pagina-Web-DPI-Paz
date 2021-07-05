@@ -1,0 +1,58 @@
+.container__card {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto 0 auto;
+
+  .card {
+    background-color: #fff;
+    background-image: url(../img/background-cards.svg);
+    background-repeat: no-repeat;
+    border: 1px solid $color-verde;
+    color: $color-azul-marino;
+    width: 370px;
+    height: 220px;
+    text-align: center;
+    transform: translateY(-70px);
+    .card__title {
+      text-transform: uppercase;
+      font-family: $ubuntu-regular;
+      font-size: 27px;
+      padding-top: 30px;
+    }
+    .card__info {
+      font-size: 15px;
+      line-height: 28px;
+      padding-top: 10px;
+      padding-left: 50px;
+      padding-bottom: 30px;
+      max-width: 310px;
+    }
+    .card__contacto{
+      margin-top: 10px;
+      margin-left: 60px;
+      text-align: left;
+      font-size: 15px;
+      line-height: 20px;
+      li{
+        margin-bottom: 10px;
+        i{
+          margin-right: 10px;
+        }
+      }
+    }
+    .card__horario{
+      margin-top: 10px;
+      font-size: 15px;
+      line-height: 32px;
+      span{
+        margin-left: 115px;
+        
+      }
+      .horario{
+        margin-left: 50px;
+      }
+     
+    }
+  }
+}

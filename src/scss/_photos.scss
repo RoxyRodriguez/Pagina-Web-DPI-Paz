@@ -1,0 +1,13 @@
+.container__photos {
+  .cards__photos {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 0 auto;
+    transform: translateY(-100px);
+  }
+  .photo__buttons{
+    text-align: center;   
+    transform: translateY(-70px);
+  }
+}

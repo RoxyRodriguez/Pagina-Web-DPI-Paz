@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Ubuntu-Light' ;
+    src: url(../fonts/Ubuntu-Light.ttf);
+}
+@font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url(../fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+    font-family: 'Ubuntu-Medium';
+    src: url(../fonts/Ubuntu-Medium.ttf);
+}
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+//===== VARIABLES
+$max-width: 1440px;
+$color-azul-marino:#2E236B;
+$color-verde:#74A127;
+$color-blanco:#FDFDFD;
+$color-gris:#7A797E;
+$ubuntu-light:'Ubuntu-Light';
+$ubuntu-bold:'Ubuntu-Bold';
+$ubuntu-medium:'Ubuntu-Medium';
+$ubuntu-regular:'Ubuntu-Regular';
+
+
